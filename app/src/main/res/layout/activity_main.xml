@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/download"
+        android:textSize="16sp"
+        android:onClick="launchSecondActivity"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/upload"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/paris5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFavourite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="194dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart1" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Parrise"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFavourite"
+        app:layout_constraintVertical_bias="0.39" />
+
+
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camara"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@+id/evCamera"
+        app:layout_constraintBottom_toBottomOf="@+id/evCamera"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/evCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/camaratype"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    <TextView
+        android:id="@+id/tvCameraSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/evCameraSetting"
+        app:layout_constraintBottom_toBottomOf="@+id/evCameraSetting"/>
+
+    <EditText
+        android:id="@+id/evCameraSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/settings"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/tvCamera" />
+
+    <EditText
+        android:editable="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:background="@null"
+        android:focusable="true"
+        android:scrollbars="vertical"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0dp"
+        android:text="@string/description"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCameraSettings" />
+
+   <!-- <EditText
+        android:id="@+id/camaraType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/camaratype"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.524" />
+
+
+    <TextView
+        android:id="@+id/camarasettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:text="@string/settings"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camaraLable" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        android:inputType="textPersonName"
+        android:text="@string/setting_value"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camaraType" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:padding="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:maxLines="5"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camarasettings" />-->
+
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tvCamera,tvCameraSettings"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

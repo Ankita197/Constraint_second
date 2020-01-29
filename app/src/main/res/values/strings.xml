@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ConstrainLayoutsecond</string>
+    <string name="upload">upload</string>
+    <string name="download">download</string>
+    <string name="camara">Camara</string>
+    <string name="camaratype">Camara Type</string>
+    <string name="settings">Camara settings</string>
+    <string name="setting_value">setting_value</string>
+    <string name="description">With its historic cities, rich culture, fabulous food and gorgeous landscapes, France is an eternal magnet for visitors. Add elegant architecture, inspiring art and romantic Paris Perfect holiday apartment rentals, and a trip to France is a no-brainer. If you need a special reason to visit France in 2020, though, we’ve found 10 must-see events to get every keen traveler booking a trip pronto</string>
+    <string name="title_activity_second">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
